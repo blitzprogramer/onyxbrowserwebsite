@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONYX Browser - Nowoczesna Przeglądarka Internetowa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <span class="logo-text">ONYX</span>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#features">Funkcje</a></li>
+                <li><a href="#screenshots">Zrzuty ekranu</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Kontakt</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" data-contact="discord">Discord</a></li>
+                        <li><a href="#" data-contact="email">Email</a></li>
+                        <li><a href="#" data-contact="facebook">Facebook</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">Beta 1.0</div>
+            <h1 class="hero-title">Przeglądarka <span class="gradient-text">ONYX</span></h1>
+            <p class="hero-description">Nowoczesna, szybka i bezpieczna przeglądarka internetowa z zaawansowaną ochroną prywatności - całkowicie za darmo!</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" id="downloadBtn">Pobierz Za Darmo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📥</div>
+                    <div class="stat-number" data-target="50000">0</div>
+                    <div class="stat-label">Pobrań</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number" data-target="12500">0</div>
+                    <div class="stat-label">Aktywnych użytkowników</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-number" data-target="4.8">0</div>
+                    <div class="stat-label">Ocena Google Play</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🛡️</div>
+                    <div class="stat-number" data-target="1000000">0</div>
+                    <div class="stat-label">Zablokowanych trackerów</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Najważniejsze <span class="gradient-text">Funkcje</span></h2>
+            <div class="features-grid">
+                <div class="feature-card" style="animation-delay: 0.1s">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Błyskawiczna Prędkość</h3>
+                    <p>Zoptymalizowany silnik renderowania zapewnia natychmiastowe ładowanie stron</p>
+                </div>
+                <div class="feature-card" style="animation-delay: 0.2s">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Prywatność Przede Wszystkim</h3>
+                    <p>Zaawansowane blokowanie trackerów i ochrona przed śledzeniem</p>
+                </div>
+                <div class="feature-card" style="animation-delay: 0.3s">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Personalizacja</h3>
+                    <p>Dostosuj wygląd i funkcje przeglądarki według własnych potrzeb</p>
+                </div>
+                <div class="feature-card" style="animation-delay: 0.4s">
+                    <div class="feature-icon">📱</div>
+                    <h3>Synchronizacja</h3>
+                    <p>Zsynchronizuj zakładki i historię na wszystkich urządzeniach</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots" id="screenshots">
+        <div class="container">
+            <h2 class="section-title">Zrzuty <span class="gradient-text">Ekranu</span></h2>
+            <div class="carousel">
+                <button class="carousel-btn carousel-btn-prev" id="prevBtn">‹</button>
+                <div class="carousel-track">
+                    <div class="carousel-slide active">
+                        <img src="https://via.placeholder.com/800x500/1a1a1a/ff0844?text=ONYX+Ekran+Główny" alt="Ekran główny ONYX">
+                        <div class="slide-caption">Strona główna przeglądarki</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://via.placeholder.com/800x500/1a1a1a/ff6b6b?text=ONYX+Zakładki" alt="Zakładki">
+                        <div class="slide-caption">Zarządzanie zakładkami</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://via.placeholder.com/800x500/1a1a1a/ffd700?text=ONYX+Ustawienia" alt="Ustawienia">
+                        <div class="slide-caption">Panel ustawień</div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-btn-next" id="nextBtn">›</button>
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Download Modal -->
+    <div class="modal" id="downloadModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeDownloadModal">&times;</button>
+            <h2>Pobierz ONYX Browser</h2>
+            <div class="modal-body">
+                <div class="platform-grid">
+                    <button class="platform-btn" data-platform="windows">
+                        <span class="platform-icon">🪟</span>
+                        <span class="platform-name">Windows</span>
+                    </button>
+                    <button class="platform-btn" data-platform="android">
+                        <span class="platform-icon">🤖</span>
+                        <span class="platform-name">Android</span>
+                    </button>
+                    <button class="platform-btn" data-platform="ios">
+                        <span class="platform-icon">🍎</span>
+                        <span class="platform-name">iOS</span>
+                    </button>
+                    <button class="platform-btn" data-platform="linux">
+                        <span class="platform-icon">🐧</span>
+                        <span class="platform-name">Linux</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="notification" id="notification"></div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-arrow">↓</div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ONYX Browser. Wszystkie prawa zastrzeżone.</p>
+            <div class="footer-links">
+                <a href="#">Polityka prywatności</a>
+                <a href="#">Warunki użytkowania</a>
+                <a href="#">Kontakt</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
