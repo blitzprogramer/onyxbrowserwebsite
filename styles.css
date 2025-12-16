@@ -96,6 +96,25 @@ body {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo-img {
+    height: 45px;
+    width: 45px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.5));
+    transition: all 0.3s;
+}
+
+.logo-img:hover {
+    filter: drop-shadow(0 0 15px rgba(139, 92, 246, 0.8));
+    transform: scale(1.05);
+}
+
 .logo-text {
     font-size: 1.8rem;
     font-weight: 800;
@@ -752,6 +771,15 @@ body {
         visibility: visible;
         transform: none;
         margin-top: 0.5rem;
+    }
+
+    .logo-img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
     }
 
     .hero-title {
